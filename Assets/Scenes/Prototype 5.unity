@@ -1026,7 +1026,7 @@ TrailRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Time: 0.25
-  m_PreviewTimeScale: 0
+  m_PreviewTimeScale: 1
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1.9671988
@@ -1057,7 +1057,7 @@ TrailRenderer:
     colorGradient:
       serializedVersion: 2
       key0: {r: 0.07990736, g: 0.62442267, b: 0.98490566, a: 1}
-      key1: {r: 1, g: 1, b: 1, a: 1}
+      key1: {r: 0.93962264, g: 0.05495901, b: 0.05495901, a: 1}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
@@ -3425,6 +3425,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targets:
   - {fileID: 8093836850991326966, guid: 6b34ddcbb42021848a398b65ad118e4e, type: 3}
+  - {fileID: 6369094116129147520, guid: eef2590ec41a4a643862741152c34557, type: 3}
   - {fileID: 8615949330695975979, guid: 8b7a6647f78cc6740b200aa3f8387c10, type: 3}
   - {fileID: 3556958954826367895, guid: de1cac3433415b14799c9f8446a8715f, type: 3}
   - {fileID: 5127010161926965011, guid: 0b1f96ee470950a479cef0f876f30279, type: 3}
