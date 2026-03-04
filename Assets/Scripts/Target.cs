@@ -4,7 +4,7 @@ public class Target : MonoBehaviour
 {
     private Rigidbody targetRb;
     private GameManager gameManager;
-    public ParticleSystem explosionParticle;
+    [SerializeField] private ParticleSystem explosionParticle;
 
     private float minSpeed = 12;
     private float maxSpeed = 16;
@@ -12,7 +12,7 @@ public class Target : MonoBehaviour
     private float xRange = 4;
     private float ySpawnPos = -2;
 
-    public int pointValue;
+    [SerializeField] private int pointValue;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -23,12 +23,6 @@ public class Target : MonoBehaviour
         transform.position = RandomSpawnPos();
 
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     Vector3 RandomForce()
