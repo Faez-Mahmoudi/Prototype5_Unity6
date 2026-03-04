@@ -2041,7 +2041,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &871764988
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2057,10 +2057,10 @@ RectTransform:
   - {fileID: 1738356236}
   m_Father: {fileID: 1252733411}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 1000, y: 1000}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &871764989
 MonoBehaviour:
@@ -3620,7 +3620,7 @@ GameObject:
   - component: {fileID: 1252733409}
   - component: {fileID: 1252733408}
   m_Layer: 5
-  m_Name: Canvas (1)
+  m_Name: Canvas World Space
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6183,12 +6183,12 @@ MonoBehaviour:
   - {fileID: 794533179210999173, guid: 3fea59d7844fe364d94bd3e90c10824a, type: 3}
   - {fileID: 2365579937525052936, guid: 1b97339de4d9cbd4a95818c52474feb3, type: 3}
   isGameActive: 0
-  scoreText: {fileID: 134759170}
-  gameOverText: {fileID: 255838688}
-  livesText: {fileID: 1666781508}
-  restartButton: {fileID: 1539840544}
-  titleScreen: {fileID: 1035641113}
-  pauseScreen: {fileID: 1335359989}
+  scoreText: {fileID: 1798077147}
+  gameOverText: {fileID: 594656189}
+  livesText: {fileID: 1812417866}
+  restartButton: {fileID: 1509597643}
+  titleScreen: {fileID: 1240712620}
+  pauseScreen: {fileID: 871764987}
 --- !u!4 &1913587298
 Transform:
   m_ObjectHideFlags: 0
