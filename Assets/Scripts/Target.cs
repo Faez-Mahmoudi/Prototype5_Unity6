@@ -56,7 +56,7 @@ public class Target : MonoBehaviour
 
     public void DestroyTarget()
     {
-        if (gameManager.isGameActive)
+        if (gameManager.isGameActive && Time.timeScale != 0)
         {
             Destroy(gameObject);
             gameManager.UpdateScore(pointValue);

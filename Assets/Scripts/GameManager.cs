@@ -27,6 +27,7 @@ public class GameManager : MonoBehaviour
     {
        gameOverText.gameObject.SetActive(false);
        restartButton.gameObject.SetActive(false);
+       pauseScreen.gameObject.SetActive(false);
     }
 
     // Update is called once per frame

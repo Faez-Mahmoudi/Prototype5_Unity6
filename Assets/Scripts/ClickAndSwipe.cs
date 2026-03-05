@@ -31,7 +31,7 @@ public class ClickAndSwipe : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (gameManager.isGameActive)
+        if (gameManager.isGameActive && Time.timeScale != 0)
         {
             if (Input.GetMouseButtonDown(0))
             {
