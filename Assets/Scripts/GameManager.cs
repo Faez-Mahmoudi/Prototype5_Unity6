@@ -7,32 +7,32 @@ using TMPro; // Interacts with TextMeshProUGUI
 
 public class GameManager : MonoBehaviour
 {
-    public List<GameObject> targets;
+    [SerializeField] private List<GameObject> targets;
     private float spawnRate = 3.0f;
-    public bool isGameActive;
-
-    // UI 
-    public TextMeshProUGUI scoreText;
-    public TextMeshProUGUI gameOverText;
-    public TextMeshProUGUI livesText;
-    public Button restartButton;
-    public GameObject titleScreen;
-    public GameObject pauseScreen;
-    private bool paused;
-
     private int score;
     private int lives;
+    private bool paused;
+    public bool isGameActive;
+
+    [Header("UI")]
+    [SerializeField] private TextMeshProUGUI scoreText;
+    [SerializeField] private TextMeshProUGUI gameOverText;
+    [SerializeField] private TextMeshProUGUI livesText;
+    [SerializeField] private Button restartButton;
+    [SerializeField] private GameObject titleScreen;
+    [SerializeField] private GameObject pauseScreen;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+       gameOverText.gameObject.SetActive(false);
+       restartButton.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.P) && isGameActive)
+        if (Input.GetKeyDown(KeyCode.Escape) && isGameActive)
         {
             ChangePaused();
         }
@@ -66,14 +66,6 @@ public class GameManager : MonoBehaviour
             pauseScreen.SetActive(false);
             Time.timeScale = 1;
         }
-
-        /************************************************************************************
-        * This method will change the paused boolean when it is called. When the boolean is *
-        * changed to true, it enables the pauseScreen and sets the Time.timeScale to 0.     *
-        * Setting the Time.timeScale to 0 makes it so that physics calculations are paused. *
-        * When the boolean is changed to false, it disables the pauseScreen and sets the    *
-        * Time.timeScale to 1.                                                              *
-        ************************************************************************************/
     }
 
     IEnumerator SpawnTarget()
@@ -90,6 +82,10 @@ public class GameManager : MonoBehaviour
     {
         score += scoreToAdd;
         scoreText.text = "Score: " + score;
+        if (score < 0)
+        {
+            GameOver();
+        }
     }
 
     public void UpdateLives(int livesToChange)
