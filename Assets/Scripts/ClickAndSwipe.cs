@@ -8,7 +8,6 @@ using UnityEngine;
 
 public class ClickAndSwipe : MonoBehaviour
 {
-    private GameManager gameManager;
     private Camera cam;
     private Vector3 mousePos;
     private TrailRenderer trail;
@@ -24,14 +23,12 @@ public class ClickAndSwipe : MonoBehaviour
         col = GetComponent<BoxCollider>();
         trail.enabled = false;
         col.enabled =false;
-
-        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (gameManager.isGameActive && Time.timeScale != 0)
+        if (MainManager.Instance.isGameActive && Time.timeScale != 0)
         {
             if (Input.GetMouseButtonDown(0))
             {

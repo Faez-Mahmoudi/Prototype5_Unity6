@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
     private int score;
     private int lives;
     private bool paused;
-    public bool isGameActive;
+    //public bool isGameActive;
 
     [Header("UI")]
     [SerializeField] private TextMeshProUGUI scoreText;
@@ -33,7 +33,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) && isGameActive)
+        if (Input.GetKeyDown(KeyCode.Escape) && MainManager.Instance.isGameActive)
         {
             ChangePaused();
         }
@@ -42,7 +42,7 @@ public class GameManager : MonoBehaviour
 
     public void StartGame(int difficulty)
     {
-        isGameActive = true;
+        MainManager.Instance.isGameActive = true;
         score = 0;
 
         StartCoroutine(SpawnTarget());
@@ -71,7 +71,7 @@ public class GameManager : MonoBehaviour
 
     IEnumerator SpawnTarget()
     {
-        while (isGameActive)
+        while (MainManager.Instance.isGameActive)
         {
             yield return new WaitForSeconds(spawnRate);
             int index = Random.Range(0, targets.Count);
@@ -103,7 +103,7 @@ public class GameManager : MonoBehaviour
     {
         gameOverText.gameObject.SetActive(true);
         restartButton.gameObject.SetActive(true);
-        isGameActive = false;
+        MainManager.Instance.isGameActive = false;
     }
 
     public void RestartGame()
