@@ -47,7 +47,7 @@ public class GameManager : MonoBehaviour
         MainManager.Instance.isGameActive = true;
         score = 0;
         ID = difficulty;
-        
+
         if (ID == 1)
             bestScore = MainManager.Instance.bestEasy;
         else if (ID == 2)
@@ -95,6 +95,23 @@ public class GameManager : MonoBehaviour
     {
         score += scoreToAdd;
         scoreText.text = "Score: " + score;
+
+        if (score > MainManager.Instance.bestEasy && ID == 1)
+        {
+            MainManager.Instance.bestEasy = score;
+            bestScoreText.SetText("High Score: " + MainManager.Instance.bestEasy);
+        }
+        if (score > MainManager.Instance.bestMedium && ID == 2)
+        {
+            MainManager.Instance.bestMedium = score;
+            bestScoreText.SetText("High Score: " + MainManager.Instance.bestMedium);
+        }
+        if (score > MainManager.Instance.bestHard && ID == 3)
+        {
+            MainManager.Instance.bestHard = score;
+            bestScoreText.SetText("High Score: " + MainManager.Instance.bestHard);
+        }
+
         if (score < 0)
         {
             GameOver();
@@ -116,6 +133,7 @@ public class GameManager : MonoBehaviour
         gameOverText.gameObject.SetActive(true);
         restartButton.gameObject.SetActive(true);
         MainManager.Instance.isGameActive = false;
+        MainManager.Instance.SaveScore();
     }
 
     public void RestartGame()
