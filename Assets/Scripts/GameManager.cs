@@ -10,14 +10,16 @@ public class GameManager : MonoBehaviour
     [SerializeField] private List<GameObject> targets;
     private float spawnRate = 3.0f;
     private int score;
+    private int bestScore;
+    private int ID;
     private int lives;
     private bool paused;
-    //public bool isGameActive;
 
     [Header("UI")]
     [SerializeField] private TextMeshProUGUI scoreText;
     [SerializeField] private TextMeshProUGUI gameOverText;
     [SerializeField] private TextMeshProUGUI livesText;
+    [SerializeField] private TextMeshProUGUI bestScoreText;
     [SerializeField] private Button restartButton;
     [SerializeField] private GameObject titleScreen;
     [SerializeField] private GameObject pauseScreen;
@@ -44,6 +46,16 @@ public class GameManager : MonoBehaviour
     {
         MainManager.Instance.isGameActive = true;
         score = 0;
+        ID = difficulty;
+        
+        if (ID == 1)
+            bestScore = MainManager.Instance.bestEasy;
+        else if (ID == 2)
+            bestScore = MainManager.Instance.bestMedium;
+        else
+            bestScore = MainManager.Instance.bestHard;
+
+        bestScoreText.text = "High Score: " + bestScore;
 
         StartCoroutine(SpawnTarget());
         UpdateScore(0);

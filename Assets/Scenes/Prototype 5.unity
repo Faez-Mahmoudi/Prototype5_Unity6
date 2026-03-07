@@ -6467,6 +6467,7 @@ MonoBehaviour:
   scoreText: {fileID: 1798077147}
   gameOverText: {fileID: 594656189}
   livesText: {fileID: 1812417866}
+  bestScoreText: {fileID: 1726498752}
   restartButton: {fileID: 1509597643}
   titleScreen: {fileID: 1240712620}
   pauseScreen: {fileID: 871764987}
