@@ -9,6 +9,8 @@ public class MainManager : MonoBehaviour
     public int bestHard;
     public bool isGameActive;
 
+    public AudioSource my_audio;
+
     // Save our data
     [System.Serializable]
     class SaveData
@@ -27,7 +29,8 @@ public class MainManager : MonoBehaviour
        }
 
        Instance = this;
-       DontDestroyOnLoad(gameObject); 
+       DontDestroyOnLoad(gameObject);
+       //my_audio = GetComponent<AudioSource>(); 
        isGameActive = true;
        LoadScore();
     }

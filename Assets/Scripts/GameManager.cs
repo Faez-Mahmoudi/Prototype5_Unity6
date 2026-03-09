@@ -23,6 +23,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Button restartButton;
     [SerializeField] private GameObject titleScreen;
     [SerializeField] private GameObject pauseScreen;
+    [SerializeField] private Slider my_slider;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -39,6 +40,8 @@ public class GameManager : MonoBehaviour
         {
             ChangePaused();
         }
+
+        MainManager.Instance.my_audio.volume = my_slider.value;
     }
 
 
