@@ -187,6 +187,7 @@ MonoBehaviour:
   bestEasy: 0
   bestMedium: 0
   bestHard: 0
+  musicVolume: 0
   isGameActive: 0
   my_audio: {fileID: 0}
 --- !u!4 &52069639
@@ -214,8 +215,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: e8f2199dfc0cd9e489d382f087d6a8c4, type: 3}
-  m_Resource: {fileID: 8300000, guid: e8f2199dfc0cd9e489d382f087d6a8c4, type: 3}
+  m_audioClip: {fileID: 8300000, guid: f9e4a86d495194b47a2cad1e440a8e01, type: 3}
+  m_Resource: {fileID: 8300000, guid: f9e4a86d495194b47a2cad1e440a8e01, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -1678,8 +1679,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4292549851
-  m_fontColor: {r: 0.85882354, g: 0.10980392, b: 0.85882354, a: 1}
+    rgba: 4279832332
+  m_fontColor: {r: 0.04705883, g: 0.058823533, b: 0.098039225, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -4718,8 +4719,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.854902, g: 0.10980393, b: 0.854902, a: 1}
-    m_PressedColor: {r: 0.854902, g: 0.10980393, b: 0.854902, a: 1}
+    m_HighlightedColor: {r: 0.04705883, g: 0.058823533, b: 0.098039225, a: 1}
+    m_PressedColor: {r: 0.04705883, g: 0.058823533, b: 0.098039225, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -5425,8 +5426,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4292484314
-  m_fontColor: {r: 0.854902, g: 0.10980393, b: 0.854902, a: 1}
+    rgba: 4279832332
+  m_fontColor: {r: 0.04705883, g: 0.058823533, b: 0.098039225, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:

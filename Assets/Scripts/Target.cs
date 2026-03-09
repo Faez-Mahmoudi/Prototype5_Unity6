@@ -48,7 +48,7 @@ public class Target : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         Destroy(gameObject);
-        if(!gameObject.CompareTag("Bad") && MainManager.Instance.isGameActive)
+        if(!gameObject.CompareTag("Bad") && !gameObject.CompareTag("Death") && MainManager.Instance.isGameActive)
         {
             gameManager.UpdateLives(-1);
         }
@@ -58,6 +58,9 @@ public class Target : MonoBehaviour
     {
         if (MainManager.Instance.isGameActive && Time.timeScale != 0)
         {
+            if (gameObject.CompareTag("Death"))
+                gameManager.UpdateLives(-1);
+
             Destroy(gameObject);
             gameManager.UpdateScore(pointValue);
             Instantiate(explosionParticle, transform.position, explosionParticle.transform.rotation);
