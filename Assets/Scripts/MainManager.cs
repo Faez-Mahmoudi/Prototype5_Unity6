@@ -7,6 +7,7 @@ public class MainManager : MonoBehaviour
     public int bestEasy;
     public int bestMedium;
     public int bestHard;
+    public float musicVolume;
     public bool isGameActive;
 
     public AudioSource my_audio;
@@ -18,6 +19,7 @@ public class MainManager : MonoBehaviour
         public int b_easy;
         public int b_medium;
         public int b_hard;
+        public float m_volume;
     }
 
     void Awake()
@@ -30,9 +32,10 @@ public class MainManager : MonoBehaviour
 
        Instance = this;
        DontDestroyOnLoad(gameObject);
-       //my_audio = GetComponent<AudioSource>(); 
+       my_audio = GetComponent<AudioSource>(); 
        isGameActive = true;
        LoadScore();
+       my_audio.volume = musicVolume;
     }
 
     public void SaveScore()
@@ -41,6 +44,7 @@ public class MainManager : MonoBehaviour
         data.b_easy = bestEasy;
         data.b_medium = bestMedium;
         data.b_hard = bestHard;
+        data.m_volume = musicVolume;
 
         string json  = JsonUtility.ToJson(data);
         File.WriteAllText(Application.persistentDataPath + "/savefile.json", json);
@@ -58,12 +62,14 @@ public class MainManager : MonoBehaviour
             bestEasy = data.b_easy;
             bestMedium = data.b_medium;
             bestHard = data.b_hard;
+            musicVolume = data.m_volume;
         }
         else
         {
             bestEasy = 0;
             bestMedium = 0;
             bestHard = 0;
+            musicVolume = 1.0f;
         }
     }
 }

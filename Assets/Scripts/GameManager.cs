@@ -31,6 +31,7 @@ public class GameManager : MonoBehaviour
        gameOverText.gameObject.SetActive(false);
        restartButton.gameObject.SetActive(false);
        pauseScreen.gameObject.SetActive(false);
+       my_slider.value = MainManager.Instance.musicVolume;
     }
 
     // Update is called once per frame
@@ -136,6 +137,7 @@ public class GameManager : MonoBehaviour
         gameOverText.gameObject.SetActive(true);
         restartButton.gameObject.SetActive(true);
         MainManager.Instance.isGameActive = false;
+        MainManager.Instance.musicVolume = my_slider.value;
         MainManager.Instance.SaveScore();
     }
 

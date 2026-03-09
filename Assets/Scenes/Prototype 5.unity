@@ -188,7 +188,7 @@ MonoBehaviour:
   bestMedium: 0
   bestHard: 0
   isGameActive: 0
-  my_audio: {fileID: 52069640}
+  my_audio: {fileID: 0}
 --- !u!4 &52069639
 Transform:
   m_ObjectHideFlags: 0
