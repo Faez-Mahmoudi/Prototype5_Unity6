@@ -1,6 +1,6 @@
-# Prototype 3 (Unity 6)
+# Prototype 5 (Unity 6)
 
-![Cover Image](Screenshots/Prototype3_2.jpg)
+![Cover Image](Screenshots/Prototype5_U6_1.jpg)
 
 **Prototype 3** is an endless-runner Unity game prototype developed as part of the **Unity Junior Programmer Pathway (Unity 6)**.  
 It features enhanced gameplay mechanics including player jump(using rigidbody), obstacles, items, UI interaction, and simple game logic.
