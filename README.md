@@ -16,7 +16,7 @@ It features enhanced gameplay mechanics including player jump(using rigidbody), 
 
 ## ▶️ Gameplay Video
 
-- [Watch Gameplay Video](Videos/Prototype3_3_Unity6.mp4)
+- [Watch Gameplay Video](Videos/Prototype5_U6_1080p.mp4)
 
 ---
 
