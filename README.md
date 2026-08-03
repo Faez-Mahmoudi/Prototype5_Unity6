@@ -10,7 +10,7 @@ It features enhanced gameplay mechanics including player jump(using rigidbody), 
 
 ## ▶️ Play Demo
 
-- [🎮 Unity Play Demo](https://play.unity.com/en/games/db51c94f-1566-4b02-b37a-ff4d267544cc/prototype3) 
+- [🎮 Unity Play Demo](https://play.unity.com/en/games/5d11a7b7-a6ef-4564-9ec8-67f55f907446/prototype5ninja-crates) 
 - [🌐 itch.io Demo](https://https://faez-mahmoudi.itch.io/prototype3)
 
 
