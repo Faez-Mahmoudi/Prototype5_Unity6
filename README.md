@@ -40,13 +40,15 @@ The goal of this prototype is to practice basic interactive game mechanics using
 
 ## 🚀 Features
 
-✔ Smooth player movement and jump  
-✔ Items pickup and new score system  
-✔ Dollar and bomb tracking  
-✔ UI panels for game over and pause    
-✔ Particle system for explosions   
-✔ Animation for player movment, jump, and die    
-✔ Playable WebGL build    
+## Features
+
+- 📦 Slice airborne crates instead of fruit
+- ⚡ Simple and responsive slicing mechanics
+- 💥 Visual feedback on successful hits
+- 💡 Improved lighting and scene presentation
+- 🎨 Clean and intuitive UI
+- 🏆 Real-time score tracking
+- 🌐 WebGL support for instant browser play   
 
 ---
 
