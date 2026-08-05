@@ -23,13 +23,16 @@ Players slice flying crates while avoiding dangerous objects, testing their refl
 
 ## 🧠 About
 
-This project demonstrates core Unity skills such as:
+This project demonstrates core Unity skills including:
 
-- Player jump using rigidbody
-- Creating new obstacle prefabs
-- Collision detection and particle system
-- UI elements (game over panel, score cornometer, dollars , and bombs)
-- Simple game logic and state management
+- Physics-based object slicing
+- Collision detection and gameplay interactions
+- Dynamic object spawning system
+- Custom lighting and scene presentation
+- Responsive UI and HUD implementation
+- Score tracking and game state management
+- Audio and visual effects integration
+- Overall gameplay polish and optimization
 
 The goal of this prototype is to practice basic interactive game mechanics using Unity and C#.
 
