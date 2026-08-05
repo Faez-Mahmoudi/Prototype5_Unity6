@@ -52,11 +52,11 @@ The goal of this prototype is to practice basic interactive game mechanics using
 
 ## 🎮 How to Play
 
-- **F** → Fire bomb   
-- **Collect items** to gain temporary abilities for destroying obstacles 
-- **Collect dollars** to have chance to continue
-- **Space Key** → Jump(double jump)  
-- Avoid obstacles and black bombs to survive  
+- 🖱️ Move the mouse across the screen to slash crates.
+- 📦 Hit as many flying crates as possible.
+- ⚡ React quickly as the game speed increases.
+- 💀 Avoid hitting dangerous obstacles.
+- ❌ Avoid missing too many crates and aim for the best score.  
 
 ---
 
