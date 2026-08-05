@@ -40,8 +40,6 @@ The goal of this prototype is to practice basic interactive game mechanics using
 
 ## 🚀 Features
 
-## Features
-
 - 📦 Slice airborne crates instead of fruit
 - ⚡ Simple and responsive slicing mechanics
 - 💥 Visual feedback on successful hits
