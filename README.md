@@ -64,4 +64,4 @@ The goal of this prototype is to practice basic interactive game mechanics using
 
 ### 🔹 Clone the repository
 ```bash
-git clone https://github.com/Faez-Mahmoudi/Prototype3_Unity6.git
+git clone https://github.com/Faez-Mahmoudi/Prototype5_Unity6.git
